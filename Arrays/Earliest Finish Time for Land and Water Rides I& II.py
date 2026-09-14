@@ -1,3 +1,6 @@
+from typing import List
+
+
 # 3633. Earliest Finish Time for Land and Water Rides I
 
 class Solution:
@@ -35,10 +38,10 @@ class Solution:
         waterDuration: List[int],
     ) -> int:
         def solve(start1, duration1, start2, duration2):
-            finish1 = inf
+            finish1 = float("inf")
             for i in range(len(start1)):
                 finish1 = min(finish1, start1[i] + duration1[i])
-            finish2 = inf
+            finish2 = float("inf")
             for i in range(len(start2)):
                 finish2 = min(finish2, max(start2[i], finish1) + duration2[i])
             return finish2

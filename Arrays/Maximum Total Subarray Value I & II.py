@@ -1,3 +1,7 @@
+import heapq
+from typing import List
+
+
 # 3689. Maximum Total Subarray Value I
 
 class Solution:

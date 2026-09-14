@@ -1,3 +1,8 @@
+from typing import List
+
+from sortedcontainers import SortedList
+
+
 # 3161. Block Placement Queries
 
 class Solution:
